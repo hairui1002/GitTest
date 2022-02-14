@@ -1,0 +1,11 @@
+pipeline {
+    agent any
+    stages{
+        stage('Pull Git Demo') {
+            steps{
+		
+            git branch: 'main', credentialsId: 'bffaf036-f6c2-4921-9e40-3a39e9e73f63', url: 'git@github.com:hairui1002/GitTest.git'
+            }
+        }
+   }
+}
